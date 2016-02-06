@@ -746,16 +746,17 @@
 </div>
 <div id="inview_search">
 	<form action="http://dev.frismart.com/stores/search" role="form" method="get" class="row">
-		<div class="small-1 large-1 columns">
-			<a href="index.html" class="pin_frismart_blanc">
-				<img src="img/pin_frismart_blanc.svg" alt="logo blanc frismart" title="Frismart logo blanc"/>					</a>
+		<div class="columns">
+			<a href="index.html" id="logo-alt">
+				<img src="img/lo" alt="logo blanc frismart" title="Frismart logo blanc"/>
+			</a>
 		</div>
-		<div class="small-5 large-5 columns typeahead-container">
+		<div class="columns typeahead-container">
 			<div class="typeahead-field typeahead-query">
 				<input id="champ_recherche_inview" autocomplete="off" class="arcon" name="name" type="text" placeholder="Qui, quoi : hôtels, restaurants...">
 			</div>
 		</div>
-		<div class="small-5 large-5 columns">
+		<div class="columns">
 			<div class="typeahead-container">
 				<div class="typeahead-field typeahead-query">
 					<input id="champ_ville_inview" autocomplete="off" class="arcon" name="city" type="text" placeholder="Où : Ville, quartier...">
@@ -765,7 +766,7 @@
                 <label for="autour_view" class="arcon">A proximité</label><input type="checkbox" id="autour_view" checked="checked">
             </div>-->
 		</div>
-		<div  class="small-1 large-1 columns">
+		<div class="columns">
 			<input id="submit_search_form_view" type="submit" value="" class="frismart_color"/>
 		</div>
 	</form>
@@ -846,7 +847,6 @@
 	</form>
 	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
-
 <div id="modalCompte" class="reveal-modal medium" data-reveal aria-labelledby="modal_title" aria-hidden="true" role="dialog">
 	<h2 class="modal_title">Créer un compte</h2>
 	<form action="http://dev.frismart.com/users/register" data-abide="data-abide" id="UserRegisterForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>			  <div class="row collapse">
