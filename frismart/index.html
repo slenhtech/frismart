@@ -133,31 +133,22 @@
 
             </div>-->
 			<div id="search_bar">
-				<h1 class="small-12 large-12 slogan arcon columns">Vis ta ville sur Frismart</h1>
-				<form action="http://dev.frismart.com/stores/search" role="form" method="get" class="row">
-					<div id="search_form" class="small-10 small-push-1 medium-9 medium-push-1 large-9 large-push-1 columns">
-						<div class="row">
-							<div class="small-12 medium-6 large-6 columns typeahead-container">
-								<div class="typeahead-field typeahead-query">
-									<input required autocomplete="off" id="typeahead" class="arcon" type="text" name="name" placeholder="Qui, quoi : hôtels, restaurants...">
-								</div>
-							</div>
-							<div class="small-12 medium-6 large-6 columns">
-								<div class="typeahead-container">
-									<div class="typeahead-field typeahead-query">
-										<input required autocomplete="off" id="champ_ville" class="arcon" type="text" name="city" placeholder="Où : Ville, quartier...">
-									</div>
-								</div>
-								<!--<div id="arround_me">
-                                    <label for="autour" class="arcon"> A proximité</label><input type="checkbox" id="autour" checked="checked">
-                                </div>-->
+				<h1 class="slogan arcon">Vis ta ville sur Frismart</h1>
+				<form action="http://dev.frismart.com/stores/search" role="form" method="get">
+					<div id="search_form">
+						<div class="typeahead-container">
+							<div class="typeahead-field typeahead-query">
+								<input required autocomplete="off" id="typeahead" class="arcon" type="text" name="name" placeholder="Qui, quoi : hôtels, restaurants...">
 							</div>
 						</div>
-					</div>
-					<div id="submit-btn" class="small-10 small-pull-1 medium-1 medium-pull-1 large-1 large-pull-1 columns">
-						<!--<input type="submit" value=""  id="submit_search_form">-->
-						<button type="submit" value="" id="submit-button" class="fa fa-search hidden-for-small"></button>
-						<button type="submit" value="" id="submit-button-alt" class="fa fa-search visible-for-small-only"></button>
+						<div class="typeahead-container">
+							<div class="typeahead-field typeahead-query">
+								<input required autocomplete="off" id="champ_ville" class="arcon" type="text" name="city" placeholder="Où : Ville, quartier...">
+							</div>
+						</div>
+						<div id="submit-btn">
+							<button type="submit" class="fa fa-search" id="submit-button"></button>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -746,29 +737,38 @@
 </div>
 <div id="inview_search">
 	<form action="http://dev.frismart.com/stores/search" role="form" method="get" class="row">
-		<div class="large-3 columns">
+		<div id="section-logo">
+			<a href="index.html" id="logo-frismart-alt">
+				<img src="img/frismart_pin_icon_white.png" alt="Logo Frismart"/>FRISMART
+			</a>
+		</div>
+<!--		<div class="large-3 large-push-1 columns">
 			<a href="index.html" class="pin_frismart_blanc">
 				<img src="img/pin_frismart_blanc.svg" alt="logo blanc frismart" title="Frismart logo blanc"/>
 			</a>
-		</div>
-		<div class="large-3 columns typeahead-container">
-			<div class="typeahead-field typeahead-query">
-				<input id="champ_recherche_inview" autocomplete="off" class="arcon" name="name" type="text" placeholder="Qui, quoi : hôtels, restaurants...">
-			</div>
-		</div>
-		<div class="large-3 columns">
-			<div class="typeahead-container">
+		</div>-->
+		<div id="form-fields">
+			<div id="name-field"  class="typeahead-container">
 				<div class="typeahead-field typeahead-query">
-					<input id="champ_ville_inview" autocomplete="off" class="arcon" name="city" type="text" placeholder="Où : Ville, quartier...">
+					<input id="champ_recherche_inview" autocomplete="off" class="arcon" name="name" type="text" placeholder="Qui, quoi : hôtels, restaurants...">
 				</div>
 			</div>
-			<!--<div id="arround_me_inview">
-                <label for="autour_view" class="arcon">A proximité</label><input type="checkbox" id="autour_view" checked="checked">
-            </div>-->
+			<div id="city-field">
+				<div class="typeahead-container">
+					<div class="typeahead-field typeahead-query">
+						<input id="champ_ville_inview" autocomplete="off" class="arcon" name="city" type="text" placeholder="Où : Ville, quartier...">
+					</div>
+				</div>
+				<!--<div id="arround_me_inview">
+                    <label for="autour_view" class="arcon">A proximité</label><input type="checkbox" id="autour_view" checked="checked">
+                </div>-->
+			</div>
+			<div id="submit-field">
+				<button type="submit" class="fa fa-search"></button>
+				<!--<input id="submit_search_form_view" type="submit" value="" class="frismart_color"/>-->
+			</div>
 		</div>
-		<div class="large-1 columns">
-			<input id="submit_search_form_view" type="submit" value="" class="frismart_color"/>
-		</div>
+
 	</form>
 	<a id="bt_menu_inview" href="#" class="left"><img src="img/menu.svg" alt="menu frismart" title="Frismart menu"/></a>
 </div>

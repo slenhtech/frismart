@@ -15,9 +15,20 @@
 }
 input#typeahead{
     border-radius: 50px 0 0 50px;
+    width: calc(50% - 50px);
 }
-input#champ_ville{
-    border-radius: 0 50px 50px 0;
+#logo-frismart-alt{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-top:8px;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    position: relative;
+}
+#logo-frismart-alt img{
+    height:40px;
 }
 #logo-frismart{
     display: inline-block;
@@ -39,12 +50,13 @@ input#champ_ville{
 }
 #submit-button{
     display: block;
-    height: 90px;
-    padding: 25px;
-    margin-left: -16px;
+    padding: 14.5px 25px;
+    top: 5.5px;
     font-size: 25px;
     color: #fff;
     cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    left: -6px;
 }
 #submit-button-alt{
     display: block;
@@ -92,13 +104,68 @@ input#champ_ville{
     color: #ffffff;
     font-size: 20px;
 }
-input[type="search"]{
+#search_form .typeahead-container{
     display: inline-block;
+    vertical-align: top;
 }
-#search_form .row .typeahead-container{
+#search_form #submit-btn{
+    display: inline-block;
+    vertical-align: top;
+}
+#search_bar{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+#search_bar form{
     display: block;
+    height: 40px;
 }
 
+/*
+ *Menu flotant
+ */
+#inview_search{
+    overflow: hidden;
+    width:100%
+}
+#section-logo, #form-fields{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+#section-logo{
+    width: 200px;
+    left: 45px;
+}
+#form-fields{
+    position: relative;
+    width: calc(100% - 250px);
+}
+#name-field, #city-field, #submit-field{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 8px;
+}
+#name-field input{
+    border-radius: 50px 0 0 50px;
+    right: -8px;
+}
+#name-field, #city-field{
+    width: calc(50% - 50px);
+}
+#submit-field{
+    width: 50px;
+    left: -5px;
+}
+#champ_ville_inview, #champ_recherche_inview{
+     top: 0;
+ }
+#submit-field .fa{
+    color: #fff;
+    padding: 10.5px 35px;
+    border-radius: 0 50px 50px 0;
+}
 @media screen and (max-width: 640px) and (min-width: 200px) {
 
     input#typeahead, input#champ_ville{
