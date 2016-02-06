@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="Untitled-page%201" viewBox="0 0 270 132" style="background-color:#ffffff00" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="270px" height="132px"
+>
+	<defs>
+		<filter id="filter1" x="-100%" y="-100%" width="300%" height="300%">
+			<!-- Ombre portée -->
+			<feOffset result="out" in="SourceGraphic" dx="0" dy="4"/>
+			<feColorMatrix result="out" in="out" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0"/>
+			<feGaussianBlur result="out" in="out" stdDeviation="3"/>
+			<feBlend in="SourceGraphic" in2="out" mode="normal" result="Ombre_portée1"/>
+		</filter>
+	</defs>
+	<g id="Calque%201">
+		<g filter="url(#filter1)">
+			<path d="M 3 0.25 C 3 -12.7412 11.2588 -21 24.25 -21 L 245.75 -21 C 258.7412 -21 267 -12.7412 267 0.25 L 267 97.75 C 267 110.7412 258.7412 119 245.75 119 L 24.25 119 C 11.2588 119 3 110.7412 3 97.75 L 3 0.25 Z" fill="#ffffff"/>
+		</g>
+	</g>
+</svg>
