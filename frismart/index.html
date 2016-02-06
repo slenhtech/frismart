@@ -747,28 +747,31 @@
 <div id="inview_search">
 	<form action="http://dev.frismart.com/stores/search" role="form" method="get" class="row">
 		<div class="columns">
-			<a href="index.html" id="logo-alt">
-				<img src="img/lo" alt="logo blanc frismart" title="Frismart logo blanc"/>
+			<a href="index.html" class="pin_frismart_blanc">
+				<img src="img/pin_frismart_blanc.svg" alt="logo blanc frismart" title="Frismart logo blanc"/>
 			</a>
 		</div>
-		<div class="columns typeahead-container">
-			<div class="typeahead-field typeahead-query">
-				<input id="champ_recherche_inview" autocomplete="off" class="arcon" name="name" type="text" placeholder="Qui, quoi : hôtels, restaurants...">
-			</div>
-		</div>
-		<div class="columns">
-			<div class="typeahead-container">
+		<div class="row">
+			<div class="columns typeahead-container">
 				<div class="typeahead-field typeahead-query">
-					<input id="champ_ville_inview" autocomplete="off" class="arcon" name="city" type="text" placeholder="Où : Ville, quartier...">
+					<input id="champ_recherche_inview" autocomplete="off" class="arcon" name="name" type="text" placeholder="Qui, quoi : hôtels, restaurants...">
 				</div>
 			</div>
-			<!--<div id="arround_me_inview">
-                <label for="autour_view" class="arcon">A proximité</label><input type="checkbox" id="autour_view" checked="checked">
-            </div>-->
+			<div class="columns">
+				<div class="typeahead-container">
+					<div class="typeahead-field typeahead-query">
+						<input id="champ_ville_inview" autocomplete="off" class="arcon" name="city" type="text" placeholder="Où : Ville, quartier...">
+					</div>
+				</div>
+				<!--<div id="arround_me_inview">
+                    <label for="autour_view" class="arcon">A proximité</label><input type="checkbox" id="autour_view" checked="checked">
+                </div>-->
+			</div>
+			<div class="columns">
+				<input id="submit_search_form_view" type="submit" value="" class="frismart_color"/>
+			</div>
 		</div>
-		<div class="columns">
-			<input id="submit_search_form_view" type="submit" value="" class="frismart_color"/>
-		</div>
+
 	</form>
 	<a id="bt_menu_inview" href="#" class="left"><img src="img/menu.svg" alt="menu frismart" title="Frismart menu"/></a>
 </div>
