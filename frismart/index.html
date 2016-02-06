@@ -135,7 +135,7 @@
 			<div id="search_bar">
 				<h1 class="small-12 large-12 slogan arcon columns">Vis ta ville sur Frismart</h1>
 				<form action="http://dev.frismart.com/stores/search" role="form" method="get" class="row">
-					<div id="search_form" class="small-11 large-11 columns">
+					<div id="search_form" class="small-10 small-push-1 medium-9 medium-push-1 large-9 large-push-1 columns">
 						<div class="row">
 							<div class="small-12 medium-6 large-6 columns typeahead-container">
 								<div class="typeahead-field typeahead-query">
@@ -154,8 +154,10 @@
 							</div>
 						</div>
 					</div>
-					<div id="bt_search" class="small-1 large-1 columns">
-						<input type="submit" value=""  id="submit_search_form">
+					<div id="submit-btn" class="small-10 small-pull-1 medium-1 medium-pull-1 large-1 large-pull-1 columns">
+						<!--<input type="submit" value=""  id="submit_search_form">-->
+						<button type="submit" value="" id="submit-button" class="fa fa-search hidden-for-small"></button>
+						<button type="submit" value="" id="submit-button-alt" class="fa fa-search visible-for-small-only"></button>
 					</div>
 				</form>
 			</div>
