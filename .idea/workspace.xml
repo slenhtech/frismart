@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09618226-f943-4f89-9a35-98b0d306d85f" name="Default" comment="Ajout du pin blanc">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frismart/index.html" afterPath="$PROJECT_DIR$/frismart/index.html" />
+    <list default="true" id="09618226-f943-4f89-9a35-98b0d306d85f" name="Default" comment="Commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="frismart.iws" />
@@ -266,7 +265,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454789918533</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit">
+      <created>1454790342600</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1454790342600</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -313,9 +318,9 @@
     <MESSAGE value="Ajout de l'icone frismart blue.&#10;Feuille de style custom.css" />
     <MESSAGE value="J'ai retiré les bouttons se connecter et s'enregistrer" />
     <MESSAGE value="J'ai fixé le manu latéral" />
-    <MESSAGE value="Commit" />
     <MESSAGE value="Ajout du pin blanc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout du pin blanc" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
