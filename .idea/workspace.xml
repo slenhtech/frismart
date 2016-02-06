@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09618226-f943-4f89-9a35-98b0d306d85f" name="Default" comment="J'ai fixé le manu latéral">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frismart/index.html" afterPath="$PROJECT_DIR$/frismart/index.html" />
+    <list default="true" id="09618226-f943-4f89-9a35-98b0d306d85f" name="Default" comment="Commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="frismart.iws" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frismart/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38536584">
-              <caret line="751" column="8" selection-start-line="751" selection-start-column="8" selection-end-line="751" selection-end-column="8" />
+            <state vertical-scroll-proportion="1.1869918">
+              <caret line="750" column="0" selection-start-line="750" selection-start-column="0" selection-end-line="750" selection-end-column="0" />
               <folding>
                 <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -271,7 +270,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454772200373</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit">
+      <created>1454773128390</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1454773128390</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -318,7 +323,8 @@
     <MESSAGE value="Ajout de l'icone frismart blue.&#10;Feuille de style custom.css" />
     <MESSAGE value="J'ai retiré les bouttons se connecter et s'enregistrer" />
     <MESSAGE value="J'ai fixé le manu latéral" />
-    <option name="LAST_COMMIT_MESSAGE" value="J'ai fixé le manu latéral" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -343,8 +349,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frismart/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38536584">
-          <caret line="751" column="8" selection-start-line="751" selection-start-column="8" selection-end-line="751" selection-end-column="8" />
+        <state vertical-scroll-proportion="1.1869918">
+          <caret line="750" column="0" selection-start-line="750" selection-start-column="0" selection-end-line="750" selection-end-column="0" />
           <folding>
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
