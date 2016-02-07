@@ -1,4 +1,11 @@
 
+
+/***********
+
+COOKIES & DEBUG KIT
+
+*************/
+
 #cookie-bar, #debug-kit-toolbar{
     display: none;
 }
@@ -15,7 +22,6 @@
 }
 input#typeahead{
     border-radius: 50px 0 0 50px;
-    width: calc(50% - 50px);
 }
 #logo-frismart-alt{
     display: inline-block;
@@ -80,8 +86,6 @@ input#typeahead{
 #meteo{
     cursor: pointer;
 }
-#nav{
-}
 #nav {
     height: auto;
     padding: 8px 0 !important;
@@ -104,26 +108,55 @@ input#typeahead{
     color: #ffffff;
     font-size: 20px;
 }
+
+/*************
+
+ search form
+
+ *************/
+
+.slogan{
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+#search_bar{
+    width: calc(80% - 10%);
+    margin: 0 auto;
+}
+
 #search_form .typeahead-container{
     display: inline-block;
     vertical-align: top;
+    width: calc(50% - 44px);
+}
+#search_form .typeahead-container:nth-of-type(1){
+    margin-right: -4px;
+}
+
+#search_form #submit-button{
+    display: block;
+    padding: 14.5px 25px;
+    top: 5.5px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    left: -6px;
 }
 #search_form #submit-btn{
     display: inline-block;
     vertical-align: top;
 }
-#search_bar{
-    width: calc(100% - 40px);
-    margin: 0 auto;
-}
-#search_bar form{
-    display: block;
-    height: 40px;
-}
 
-/*
- *Menu flotant
- */
+/*************
+
+  Menu flotant
+
+ **************/
+
+
+
 #inview_search{
     overflow: hidden;
     width:100%
@@ -167,8 +200,49 @@ input#typeahead{
     border-radius: 0 50px 50px 0;
 }
 @media screen and (max-width: 640px) and (min-width: 200px) {
-
     input#typeahead, input#champ_ville{
         border-radius: 0;
+    }
+    #section-logo, #form-fields{
+        display: block;
+    }
+
+
+    /*************
+
+     search form
+
+     *************/
+
+    .slogan{
+        line-height: 29px;
+    }
+
+    #search_bar{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #search_form .typeahead-container{
+        display: block;
+        width: 100%;
+    }
+    #search_form .typeahead-container:nth-of-type(1){
+        margin:0 0 -18px 0;
+    }
+
+    #search_form #submit-button{
+        display: block;
+        width: 100%;
+        padding: 10px 25px;
+        top: 0;
+        border-radius: 5px;
+        margin: 0 auto;
+        font-size: 20px;
+        color: #fff;
+        left: 0;
+    }
+    #search_form #submit-btn{
+        display: block;
     }
 }
