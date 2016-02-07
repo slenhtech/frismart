@@ -131,7 +131,7 @@ input#typeahead{
     width: calc(50% - 44px);
 }
 #search_form .typeahead-container:nth-of-type(1){
-    margin-right: -4px;
+    margin-right: -5px;
 }
 
 #search_form #submit-button{
@@ -199,6 +199,73 @@ input#typeahead{
     padding: 10.5px 35px;
     border-radius: 0 50px 50px 0;
 }
+
+
+
+/******************
+
+ a la une slideshow
+
+ ******************/
+
+#wall_une, #alaune-slider{
+    display: inline-block;
+    vertical-align: top;
+}
+#wall_une{
+    position: relative;
+    width: 35%;
+}
+
+#wall_une #liste_une{
+    display: block;
+    padding-left: 10%;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+#wall_une #liste_une li{
+    display: inline-block;
+    width: 30%;
+    background: #fff;
+}
+#alaune-slider{
+    overflow: hidden;
+    width: 60%;
+}
+#alaune-slider ul{
+    list-style: none;
+    padding-left: 20px;
+}
+#alaune-slider .info-box, #alaune-slider .image-box{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 20px);
+}
+#alaune-slider .info-box{
+    overflow: hidden;
+}
+.orbit-container .orbit-prev{
+    left: 0 !important;
+    background: rgba(0,0,0,0.5);
+}
+.orbit-container orbit-next{
+    right: 0px !important;
+    background: rgba(0,0,0,0.5);
+}
+
+
+
+/******************
+
+ Media queries
+
+ ******************/
+
+
+
+
+
 @media screen and (max-width: 640px) and (min-width: 200px) {
     input#typeahead, input#champ_ville{
         border-radius: 0;
@@ -244,5 +311,15 @@ input#typeahead{
     }
     #search_form #submit-btn{
         display: block;
+    }
+
+    #alaune-slider{
+        width: 100%;
+    }
+
+    #alaune-slider .info-box, #alaune-slider .image-box{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
     }
 }
