@@ -1,4 +1,31 @@
 $( document ).ready(function() {
+
+	$('#header_page').find('.header_search_form').submit(function(e){
+		var nameInput = $('#champ_recherche_page'),
+			villeInput = $('#champ_ville_page');
+		var $elder = $(this).parent().find('.header_search_form > .right');
+
+		if($(window).width() <= 668){
+			if(!$elder.hasClass('open')){
+				$elder.addClass('open');
+				e.preventDefault();
+				return false;
+			}else if(nameInput.val() == '' || villeInput.val() == ''){
+				e.preventDefault();
+				return false;
+			}
+		}
+	});
+
+	$('#header_page').find('#close_button').click(function(){
+		var $elder = $('#header_page').find('.header_search_form > .right');
+		var nameInput = $('#champ_recherche_page'),
+			villeInput = $('#champ_ville_page');
+		if($elder.hasClass('open'))
+			$elder.removeClass('open');
+		nameInput.val('');
+		villeInput.val('');
+	})
     
 
 	$('#search_bar').bind('inview',function(event, isInView, visiblePartX, visiblePartY){
@@ -323,7 +350,7 @@ $( document ).ready(function() {
 			    complete: function() {
 			    }
 		});
-
+		/*
 		$("#menu_lateral").animate({
 			    left: "0%"
 			  }, {
@@ -333,7 +360,8 @@ $( document ).ready(function() {
 			    },
 			    complete: function() {
 			    }
-		});
+		});*/
+		$('#menu_lateral').toggleClass('open');
 
 		$("#calque").css("visibility", "visible");
 	});
@@ -361,7 +389,7 @@ $( document ).ready(function() {
 			    complete: function() {
 			    }
 		});
-
+		/*
 		$("#menu_lateral").animate({
 			    left: "-25%"
 			  }, {
@@ -371,7 +399,8 @@ $( document ).ready(function() {
 			    },
 			    complete: function() {
 			    }
-		});
+		});*/
+		$('#menu_lateral').toggleClass('open');
 
 		$("#calque").css("visibility", "hidden");
 	});
@@ -399,7 +428,7 @@ $( document ).ready(function() {
 			    complete: function() {
 			    }
 		});
-
+		/*
 		$("#menu_lateral").animate({
 			    left: "-25%"
 			  }, {
@@ -409,7 +438,8 @@ $( document ).ready(function() {
 			    },
 			    complete: function() {
 			    }
-		});
+		});*/
+		$('#menu_lateral').toggleClass('open');
 
 		$("#calque").css("visibility", "hidden");
 	});

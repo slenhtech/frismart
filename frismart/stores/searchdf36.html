@@ -66,15 +66,19 @@ window.DEBUGKIT_JQUERY_URL = "../debug_kit/js/jquery.js";
 							<div class="textinputs-container clearfix left h-100">
 								<div class="typeahead-container input-container h-100">
 									<div class="typeahead-field typeahead-query h-100">
-										<input id="champ_recherche_page" autocomplete="off" name="name" class="arcon" type="text" value ="Bar" placeholder="Qui, quoi : hôtels, restaurants...">
+										<input id="champ_recherche_page" autocomplete="off" name="name" class="arcon" type="text" value ="" placeholder="Qui, quoi : hôtels, restaurants...">
 									</div>
 								</div>
 							
 							
 								<div class="typeahead-container input-container h-100">
 									<div class="typeahead-field typeahead-query h-100">
-										<input id="champ_ville_page" autocomplete="off" name="city" class="arcon" type="text" value ="libreville" placeholder="Ville">
+										<input id="champ_ville_page" autocomplete="off" name="city" class="arcon" type="text" value ="" placeholder="Ville">
 									</div>
+								</div>
+								<div class="submit_container">
+									<button class="submit_button" type="submit"><i class="fa fa-search"></i></button>
+									<button id="close_button" class="close_button" type="button"><i class="fa fa-close"></i></button>
 								</div>
 								<!--<div id="arround_me_page">
 									<label for="autour" class="arcon">A proximité</label><input type="checkbox" id="autour" checked="checked">
@@ -2951,16 +2955,18 @@ function slug(a)
 			<a id="bt_menu_inview" href="#" class="left"><img src="/img/menu.svg" alt="Menu" title="Menu"></a>
 		</div>-->
 		<div id="menu_lateral">
-			<a href="#" id="bt_close" class="arcon">
+			<a href="javascript:;" id="bt_close" class="arcon">
 				<p><img src="../img/close.svg" alt="fermer frismart" title="Frismart fermer"/> Fermer</p>
 			</a>
 			<ul class="accordion" data-accordion role="tablist">
+			<!--
 			  <li>
                   <div class="accordion-navigation">
                     <a href="../users/login.html" class="arcon"><img src="../img/icon_profil.svg" alt="votre profil frismart" title="Frismart profil"/> Mon Profil</a>
                   </div>
               </li>
-
+              -->
+				<!--
 			  <li class="accordion-navigation derouler">
 			    <a href="#nav2" role="tab" id="nav2-heading" aria-controls="nav2" class="arcon"><img src="../img/icon_recherche.svg" alt="Rechcerche avancée" title="Recherche avancée"/> Recherche avancée</a>
 			    <div id="nav2" class="content" role="tabpanel" aria-labelledby="nav2-heading">
@@ -2972,7 +2978,7 @@ function slug(a)
 			     		</ul> 
 			    </div>
 			  </li>
-
+			-->
 			  <li class="accordion-navigation">
 			    <a href="http://apps.frismart.com/" role="tab" id="nav3-heading" aria-controls="nav3" class="arcon">
 			    	<img src="../img/icon_app.svg" alt="Frismart est sur instagram" title="Frismart est sur instagram"/> Nos apps
