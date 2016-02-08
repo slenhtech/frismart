@@ -101,13 +101,6 @@ input#typeahead{
     position: relative;
     top: 4px;
 }
-#bt_newsletter{
-    background: #0481b5;
-    width: auto;
-    height: auto;
-    color: #ffffff;
-    font-size: 20px;
-}
 
 /*************
 
@@ -249,11 +242,44 @@ input#typeahead{
     left: 0 !important;
     background: rgba(0,0,0,0.5);
 }
-.orbit-container orbit-next{
+.orbit-container .orbit-next{
     right: 0px !important;
+    top: 45% !important;
     background: rgba(0,0,0,0.5);
 }
 
+
+
+/******************
+
+ newsletter form
+
+ ******************/
+
+#bt_newsletter{
+    background: #0481b5;
+    width: auto;
+    height: auto;
+    margin-left: -5px;
+    padding: 23px 40px 23px 23px;
+    border-radius: 0 50px 50px 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+#NewsletterAddForm .form-fields{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#champ_newsletter, #bt_newsletter{
+    display: inline-block;
+    vertical-align: top;
+}
+#champ_newsletter{
+    width: 70%;
+    padding-left: 40px;
+     border-radius: 50px 0 0 50px;
+}
 
 
 /******************
@@ -321,5 +347,13 @@ input#typeahead{
         display: block;
         margin: 0 auto;
         width: 100%;
+    }
+
+    #NewsletterAddForm .form-fields{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #alaune-slider ul{
+        padding: 0;
     }
 }
