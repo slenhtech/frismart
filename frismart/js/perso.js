@@ -813,6 +813,21 @@ $( document ).ready(function() {
 
 	}*/
 
+	/* Responsive footer */
+	$(function () {
+		var viewportWidth = $(window).width();
+		if(viewportWidth >= 200 && viewportWidth <= 640){
+			$('#menu_footer').addClass('mobile-view');
+
+			$('#menu_footer.mobile-view h5').each(function () {
+				$(this).click(function () {
+					var liste_categorie = $(this).next('.liste_categorie');
+					liste_categorie.slideToggle();
+				})
+			})
+		}
+	})
+
 
 });
 

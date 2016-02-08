@@ -288,6 +288,35 @@ input#typeahead{
 
 /******************
 
+ Footer mobile version
+
+ ******************/
+
+#menu_footer.mobile-view h5{
+    font-size: 17px;
+    position: relative;
+    padding: 10px 10px 10px 30px;
+    cursor: pointer;
+    border-bottom:solid 1px rgba(238,238,238,0.2);
+}
+#menu_footer.mobile-view h5:hover{
+    background: #393939;
+    color: #0481b5;
+}
+#menu_footer.mobile-view h5:before{
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    left: 10px;
+    top: 10px
+}
+
+#menu_footer.mobile-view .liste_categorie{
+    display: none;
+}
+
+/******************
+
  Media queries
 
  ******************/
