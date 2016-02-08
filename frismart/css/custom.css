@@ -79,6 +79,10 @@ input#typeahead{
     padding: 15px;
     color: #ddd;
 }
+#bt_menu:hover{
+    background: #ddd;
+    color: #fff;
+}
 #logo-frismart i{
     font-style: normal;
     color: #000;
@@ -276,7 +280,7 @@ input#typeahead{
     vertical-align: top;
 }
 #champ_newsletter{
-    width: 70%;
+    width: calc(92% - 60px);
     padding-left: 40px;
      border-radius: 50px 0 0 50px;
 }
@@ -355,5 +359,12 @@ input#typeahead{
     }
     #alaune-slider ul{
         padding: 0;
+    }
+    #bt_menu{
+        visibility: visible;
+    }
+    #menu_lateral{
+        width: 80%;
+        left: -85%;
     }
 }
