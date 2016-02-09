@@ -1,0 +1,107 @@
+
+#cookie-bar, #debug-kit-toolbar{
+    display: none;
+}
+
+
+
+
+
+#bloc-categories .badge{
+    display: block;
+}
+#recherche{
+    height: 450px;
+}
+input#typeahead{
+    border-radius: 50px 0 0 50px;
+}
+input#champ_ville{
+    border-radius: 0 50px 50px 0;
+}
+#logo-frismart{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    position: relative;
+}
+#logo-frismart small{
+    position: absolute;
+    display: inline-block;
+    color: #000;
+    top: 30px;
+    text-transform: uppercase;
+    left: 60px;
+    font-size: 0.5em;
+    width: 100px;
+}
+#submit-button{
+    display: block;
+    height: 90px;
+    padding: 25px;
+    margin-left: -16px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+#submit-button-alt{
+    display: block;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    padding: 15px 25px;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+#bt_menu{
+    position: relative;
+    top: 4px;
+    padding: 15px;
+    color: #ddd;
+}
+#logo-frismart i{
+    font-style: normal;
+    color: #000;
+}
+#meteo{
+    cursor: pointer;
+}
+#nav{
+}
+#nav {
+    height: auto;
+    padding: 8px 0 !important;
+    background-color: rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(102,102,102,0.6);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(102,102,102,0.6);
+    box-shadow: 0px 2px 5px 0px rgba(102,102,102,0.6);
+}
+#logo_meteo{
+    cursor: default;
+}
+#login-buttons{
+    position: relative;
+    top: 4px;
+}
+#bt_newsletter{
+    background: #0481b5;
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    font-size: 20px;
+}
+input[type="search"]{
+    display: inline-block;
+}
+#search_form .row .typeahead-container{
+    display: block;
+}
+
+@media screen and (max-width: 640px) and (min-width: 200px) {
+
+    input#typeahead, input#champ_ville{
+        border-radius: 0;
+    }
+}
