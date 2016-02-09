@@ -89,7 +89,8 @@ body
 #nav
 {
 	width: 100%;
-	height: 44px;
+	padding: 10px 0;
+	height: auto;
 	overflow: hidden;
 	background-color: white;
 	-webkit-box-shadow: 0px 2px 5px 0px rgba(102,102,102,0.6);
@@ -569,7 +570,6 @@ body
 	{
 		visibility: hidden;
 	}
-
 	#inview_search
 	{
 		visibility: hidden;
@@ -1326,8 +1326,13 @@ body
 {
 	width: 66px;
 	height: 66px;
-	background-image: url("../img/bt_newsletter.svg");
 	border:none;
+	padding: 0;
+	text-align: center;
+	border-radius: 0 50px 50px 0;
+}
+#bt_newsletter > i {
+	margin-right: 10px;
 }
 
 #champ_newsletter
@@ -3227,7 +3232,7 @@ body
 	 margin-left:-10px;
 	 margin-right:5px;
  }
-..header_search_form {
+ .header_search_form {
 	transition: 200ms all linear;
 }
 .header_search_form,
