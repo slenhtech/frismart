@@ -13,6 +13,7 @@
 }
 #recherche{
     height: 450px;
+    position: relative;
 }
 input#typeahead{
     border-radius: 50px 0 0 50px;

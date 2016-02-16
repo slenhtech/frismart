@@ -3383,6 +3383,9 @@ body
 	.header_search_form {
 		width: 420px;
 	}
+	#search_bar {
+		top: 130px;
+	}
 }
 
 /* iPads (landscape) ----------- */
