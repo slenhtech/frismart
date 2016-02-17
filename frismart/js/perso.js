@@ -1,4 +1,20 @@
 $( document ).ready(function() {
+	function isElementInViewport (el) {
+
+	    //special bonus for those using jQuery
+	    if (typeof jQuery === "function" && el instanceof jQuery) {
+	        el = el[0];
+	    }
+
+	    var rect = el.getBoundingClientRect();
+
+	    return (
+	        rect.top >= 0 &&
+	        rect.left >= 0 &&
+	        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+	        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+	    );
+	}
 
 	$('#header_page').find('.header_search_form').submit(function(e){
 		var nameInput = $('#champ_recherche_page'),
@@ -26,13 +42,27 @@ $( document ).ready(function() {
 		nameInput.val('');
 		villeInput.val('');
 	})
-    
+
+	
+	if(!isElementInViewport($('#search_bar_form'))) {
+		console.log('width');
+		$(".inview_search").animate({
+			    top: "0px"
+			  }, {
+			    duration: 500,
+			    specialEasing: {
+			      marginLeft: "swing"
+			    },
+			    complete: function() {
+			    }
+		});
+	}
 
 	$('#search_bar').bind('inview',function(event, isInView, visiblePartX, visiblePartY){
-	  			
+		console.log("whattttt");
 		if (isInView) {
-			$("#inview_search").animate({
-				    top: "-60px"
+			$(".inview_search").animate({
+				    top: "-120px"
 				  }, {
 				    duration: 500,
 				    specialEasing: {
@@ -44,7 +74,7 @@ $( document ).ready(function() {
 		}
 		else
 		{
-			$("#inview_search").animate({
+			$(".inview_search").animate({
 				    top: "0px"
 				  }, {
 				    duration: 500,
@@ -251,7 +281,7 @@ $( document ).ready(function() {
 
 	});*/
 
-	$("#bt_menu").click(function() {
+	$(".bt_menu").click(function() {
 		
 		$("#content").animate({
 			    marginLeft: "25%"
@@ -314,58 +344,11 @@ $( document ).ready(function() {
 			    }
 		});
 
-		$("#menu_lateral").animate({
-			    left: "0%"
-			  }, {
-			    duration: 500,
-			    specialEasing: {
-			      left: "swing"
-			    },
-			    complete: function() {
-			    }
-		});
-
-		$("#calque").css("visibility", "visible");
-	});
-
-	$("#bt_menu_page").click(function() {
-		
-		$("#content").animate({
-			    marginLeft: "25%"
-			  }, {
-			    duration: 500,
-			    specialEasing: {
-			      marginLeft: "swing"
-			    },
-			    complete: function() {
-			    }
-		});
-		
-		$("#page-content").animate({
-			    marginLeft: "25%"
-			  }, {
-			    duration: 500,
-			    specialEasing: {
-			      marginLeft: "swing"
-			    },
-			    complete: function() {
-			    }
-		});
-		/*
-		$("#menu_lateral").animate({
-			    left: "0%"
-			  }, {
-			    duration: 500,
-			    specialEasing: {
-			      left: "swing"
-			    },
-			    complete: function() {
-			    }
-		});*/
 		$('#menu_lateral').toggleClass('open');
 
 		$("#calque").css("visibility", "visible");
 	});
+	
 
 	$("#calque").click(function() {
 		

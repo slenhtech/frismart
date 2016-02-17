@@ -25,6 +25,7 @@
 	<link rel="stylesheet" type="text/css" href="css/perso.css"/>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+	<link rel="stylesheet" href="css/perso.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 	<link rel="stylesheet" type="text/css" href="css/unite-gallery.css"/>
 	<link rel="stylesheet" type="text/css" href="css/rating.css"/>
@@ -62,12 +63,26 @@
 <div id="content">
 	<div id="header">
 		<div id="nav">
-			<a id="bt_menu" class="left fa fa-bars fa-lg" href="javascript:;"></a>
+			
 			<div class="row">
+				<a id="bt_menu" class="left bt_menu" href="javascript:;" >
+					<i class="fa fa-bars fa-2x"></i>
+				</a>
+				<!--
 				<div class="small-10 column">
 					<a href="index.html" id="logo-frismart">
 						<img src="img/frismart_pin_icon_blue.png" alt="Logo Frismart"/> <i>FRI</i>SMART<small>Vis ta ville</small>
 					</a>
+				</div>
+				-->
+				<div class="header_logo left">
+					<a href="../index.html" class="logo_pin" title="Accueil Frismart">
+						<img src="img/frismart_pin_icon_blue.png" alt="Menu" title="Logo Frismart Pin"/>	
+						<span class="text-container">
+							<span class="brand-name">Fri<span class="text-primary">smart</span></span>
+							<span class="header_slogan">Vis ta ville</span>
+						</span>				
+					</a>		
 				</div>
 				<!--<div class="small-2 large-4 text-center" id="login-buttons">
 					<div class="hidden-for-medium-down">
@@ -133,7 +148,7 @@
             </div>-->
 			<div id="search_bar">
 				<h1 class="slogan arcon">Vis ta ville sur Frismart</h1>
-				<form action="http://dev.frismart.com/stores/search" role="form" method="get">
+				<form id="search_bar_form" action="http://dev.frismart.com/stores/search" role="form" method="get">
 					<div id="search_form">
 						<div class="typeahead-container">
 							<div class="typeahead-field typeahead-query">
@@ -733,18 +748,14 @@
 		</div>
 	</div>
 </div>
-<div id="inview_search">
+<div id="header_page" class="inview_search">
+	<!--
 	<form action="http://dev.frismart.com/stores/search" role="form" method="get" class="row">
 		<div id="section-logo">
 			<a href="index.html" id="logo-frismart-alt">
 				<img src="img/frismart_pin_icon_white.png" alt="Logo Frismart"/>FRISMART
 			</a>
 		</div>
-<!--		<div class="large-3 large-push-1 columns">
-			<a href="index.html" class="pin_frismart_blanc">
-				<img src="img/pin_frismart_blanc.svg" alt="logo blanc frismart" title="Frismart logo blanc"/>
-			</a>
-		</div>-->
 		<div id="form-fields">
 			<div id="name-field"  class="typeahead-container">
 				<div class="typeahead-field typeahead-query">
@@ -757,18 +768,52 @@
 						<input id="champ_ville_inview" autocomplete="off" class="arcon" name="city" type="text" placeholder="Où : Ville, quartier...">
 					</div>
 				</div>
-				<!--<div id="arround_me_inview">
-                    <label for="autour_view" class="arcon">A proximité</label><input type="checkbox" id="autour_view" checked="checked">
-                </div>-->
 			</div>
 			<div id="submit-field">
 				<button type="submit" class="fa fa-search"></button>
-				<!--<input id="submit_search_form_view" type="submit" value="" class="frismart_color"/>-->
 			</div>
 		</div>
 
 	</form>
 	<a id="bt_menu_inview" href="#" class="left"><img src="img/menu.svg" onclick="return false" alt="menu frismart" title="Frismart menu"/></a>
+	-->
+	<div class="row">
+		<a id="bt_menu_page" href="javascript:;" class="left bt_menu">
+			<i class="fa fa-bars fa-2x"></i>				
+		</a>
+		<div class="header_logo left">
+			<a href="../index.html" class="logo_pin" title="Accueil Frismart">
+				<img src="img/frismart_pin_icon.png" alt="Menu" title="Logo Frismart Pin"/>	
+				<span class="text-uppercase">FRI<span class="text-bold">SMART</span></span>					
+			</a>		
+		</div>
+		<form action="http://dev.frismart.com/stores/search" role="form" method="get" class="right header_search_form">
+			<div class="right clearfix">
+				<div class="textinputs-container clearfix left h-100">
+					<div class="typeahead-container input-container h-100">
+						<div class="typeahead-field typeahead-query h-100">
+							<input id="champ_recherche_page" autocomplete="off" name="name" class="arcon" type="text" value ="" placeholder="Qui, quoi : hôtels, restaurants...">
+						</div>
+					</div>
+				
+				
+					<div class="typeahead-container input-container h-100">
+						<div class="typeahead-field typeahead-query h-100">
+							<input id="champ_ville_page" autocomplete="off" name="city" class="arcon" type="text" value ="" placeholder="Ville">
+						</div>
+					</div>
+					<div class="submit_container">
+						<button class="submit_button" type="submit"><i class="fa fa-search"></i></button>
+						<button id="close_button" class="close_button" type="button"><i class="fa fa-close"></i></button>
+					</div>
+				</div>
+				<div  class="submit-wrapper right">
+					<button id="submit_search_form_page" type="submit"><i class="fa fa-search fa-2x"></i></button>
+				</div>
+			</div>
+			
+		</form>
+	</div>
 </div>
 <div id="menu_lateral">
 	<a href="javascript" id="bt_close" onclick="return false" class="arcon">
